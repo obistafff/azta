@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--font-texte);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-titre);
+  line-height: 1.2;
+  color: var(--accent);
+}
+
+h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); }
+h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 1rem; }
+
+p + p {
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.conteneur {
+  width: 100%;
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 3rem var(--gouttiere);
+}
+
+/* Sections à lire : fond crème */
+.section-claire {
+  background: var(--creme);
+  color: var(--noir);
+}
+
+.section-claire h2,
+.section-claire h3 {
+  color: var(--cuivre);
+}
+
+/* Boutons */
+.bouton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--accent);
+  border-radius: var(--rayon);
+  background: var(--accent);
+  color: var(--noir);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.bouton:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+.bouton-secondaire {
+  background: transparent;
+  color: var(--accent);
+}
+
+.bouton-secondaire:hover {
+  background: var(--accent);
+  color: var(--noir);
+}

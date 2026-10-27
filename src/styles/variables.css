@@ -1,0 +1,23 @@
+:root {
+  /* Palette Nuit de scène */
+  --noir: #121420;
+  --or: #D9A441;
+  --cuivre: #B8693A;
+  --creme: #EFE6D6;
+  --sauge: #6B7A5A;
+
+  /* Rôles */
+  --fond: var(--noir);
+  --texte: var(--creme);
+  --accent: var(--or);
+  --accent-2: var(--cuivre);
+
+  /* Typographie */
+  --font-titre: "Lora", Georgia, serif;
+  --font-texte: "Source Sans 3", system-ui, sans-serif;
+
+  /* Mise en page */
+  --largeur-max: 1100px;
+  --gouttiere: 1rem;
+  --rayon: 6px;
+}
