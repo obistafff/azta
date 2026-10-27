@@ -4,7 +4,6 @@ import Footer from './components/Footer.jsx'
 import Accueil from './pages/Accueil.jsx'
 import LeSpectacle from './pages/LeSpectacle.jsx'
 import LesAssos from './pages/LesAssos.jsx'
-import Artistes from './pages/Artistes.jsx'
 import Contact from './pages/Contact.jsx'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
           <Route path="/" element={<Accueil />} />
           <Route path="/le-spectacle" element={<LeSpectacle />} />
           <Route path="/les-assos" element={<LesAssos />} />
-          <Route path="/artistes" element={<Artistes />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
