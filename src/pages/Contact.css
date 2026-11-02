@@ -1,0 +1,85 @@
+/* ---------- E-mail ---------- */
+.contact-email {
+  display: inline-block;
+  font-family: var(--font-arabisant);
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  color: var(--accent-2);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.contact-email:hover {
+  border-bottom-color: currentColor;
+}
+
+.contact-action {
+  margin-top: 2rem;
+}
+
+/* ---------- Documents à télécharger ---------- */
+.documents {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: min(100%, 300px);
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--bordure-douce, rgba(217, 164, 65, 0.25));
+  border-radius: var(--rayon);
+  transition: border-color 0.3s;
+}
+
+.document:hover {
+  border-color: var(--accent);
+}
+
+.document-type {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.document-titre {
+  font-family: var(--font-titre);
+  font-size: 1.3rem;
+}
+
+.document-detail {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Réseaux ---------- */
+.reseaux {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2.5rem;
+}
+
+.reseaux a {
+  font-family: var(--font-titre);
+  font-size: 1.2rem;
+  color: var(--accent-2);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.reseaux a:hover {
+  border-bottom-color: currentColor;
+}

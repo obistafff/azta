@@ -98,3 +98,73 @@ img {
   background: var(--accent);
   color: var(--noir);
 }
+
+/* ---------- Intro de page ---------- */
+.page-intro {
+  text-align: center;
+}
+
+.chapeau {
+  font-family: var(--font-arabisant);
+  font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+  line-height: 1.5;
+  max-width: 48ch;
+  margin: 1.5rem auto 0;
+}
+
+/* ---------- Bandes alternées ---------- */
+.bande-contenu {
+  text-align: center;
+  padding-block: clamp(3.5rem, 8vw, 6rem);
+}
+
+.bande-contenu p {
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+.bande-surtitre {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-claire .bande-surtitre {
+  color: var(--accent-2);
+}
+
+.bande-contenu h2 {
+  margin-bottom: 0;
+}
+
+.bande-contenu h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin: 1.5rem auto 2rem;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* ---------- Bande citation ---------- */
+.bande-citation {
+  background: var(--accent-2);
+  color: var(--creme);
+  text-align: center;
+}
+
+.bande-citation blockquote {
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.bande-citation p {
+  font-family: var(--font-arabisant);
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  line-height: 1.4;
+  max-width: 30ch;
+  margin-inline: auto;
+}

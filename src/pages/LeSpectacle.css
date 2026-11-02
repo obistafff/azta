@@ -1,0 +1,39 @@
+/* ---------- Parcours en cartes ---------- */
+.parcours {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.parcours-etape {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--bordure-douce, rgba(217, 164, 65, 0.25));
+  border-radius: var(--rayon);
+  transition: border-color 0.3s;
+}
+
+.parcours-etape:hover {
+  border-color: var(--accent);
+}
+
+.parcours-date {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.parcours-lieu {
+  font-family: var(--font-titre);
+  font-size: 1.2rem;
+}
+
+.parcours-detail {
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
