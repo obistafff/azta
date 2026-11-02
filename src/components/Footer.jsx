@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p>© {annee} AZTA, tissage de rêves</p>
-      <p>Un projet des associations AM et AMZarts</p>
+      <p>Un projet des associations MUMO et AMZarts</p>
     </footer>
   )
 }

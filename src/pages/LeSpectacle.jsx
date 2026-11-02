@@ -1,9 +1,29 @@
+import Diaporama from '../components/Diaporama.jsx'
+import tous from '../assets/images/spectacle/azta-noriac-tous.jpg'
+import chanteurs from '../assets/images/spectacle/azta-noriac-chanteurs.jpg'
+import loubnaMohamed from '../assets/images/spectacle/azta-noriac-loubnamohamed.jpg'
+import musiciens from '../assets/images/spectacle/azta-noriac-musiciens.jpg'
+import sophie from '../assets/images/spectacle/azta-noriac-sophie.jpg'
+import danse from '../assets/images/spectacle/azta-noriac-danse.jpg'
+import zaouli from '../assets/images/spectacle/azta-noriac-zaouli.jpg'
+import salut from '../assets/images/spectacle/azta-noriac-salut.jpg'
 import './LeSpectacle.css'
+
+const photosSpectacle = [
+  { src: tous, alt: "Les artistes d'AZTA réunis sur la scène de l'Espace Noriac" },
+  { src: chanteurs, alt: 'Les voix du spectacle AZTA' },
+  { src: loubnaMohamed, alt: 'Loubna Menane et Mohamed Abaragh sur scène' },
+  { src: musiciens, alt: "Les musiciens d'AZTA en concert" },
+  { src: sophie, alt: 'Sophie Curren à la basse' },
+  { src: danse, alt: 'Un moment de danse dans le spectacle AZTA' },
+  { src: zaouli, alt: 'Zaouli Curren, danseuse' },
+  { src: salut, alt: "Le salut final des artistes d'AZTA" },
+]
 
 export default function LeSpectacle() {
   return (
     <>
-            <section className="page-intro">
+      <section className="page-intro">
         <div className="conteneur">
           <h1>Le Spectacle</h1>
           <p className="chapeau">
@@ -15,7 +35,11 @@ export default function LeSpectacle() {
         </div>
       </section>
 
-      {/* Diaporama : prochaine étape */}
+      <section className="spectacle-diaporama">
+        <div className="conteneur">
+          <Diaporama photos={photosSpectacle} />
+        </div>
+      </section>
 
       <section className="bande section-claire">
         <div className="conteneur bande-contenu">
