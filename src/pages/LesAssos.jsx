@@ -1,4 +1,8 @@
 import { Link } from 'react-router'
+import logoMumo from '../assets/images/logos/logo-mumo.jpg'
+import photoLoubna from '../assets/images/spectacle/azta-noriac-loubna.jpg'
+import photoMusiciens from '../assets/images/spectacle/azta-noriac-musiciensautreangle.jpg'
+import photoLoubnaSophie from '../assets/images/spectacle/azta-noriac-loubnasophie.jpg'
 import './LesAssos.css'
 
 export default function LesAssos() {
@@ -29,6 +33,11 @@ export default function LesAssos() {
             Ses projets visent à enraciner l'identité marocaine, à préserver
             et à faire revivre le patrimoine immatériel du pays.
           </p>
+          <img
+            className="photo-bande"
+            src={photoLoubna}
+            alt="Loubna Menane sur la scène de l'Espace Noriac"
+          />
           <ul className="equipe">
             <li>
               <span className="equipe-nom">Mohamed Abaragh</span>
@@ -44,6 +53,7 @@ export default function LesAssos() {
 
       <section className="bande">
         <div className="conteneur bande-contenu">
+          <img className="asso-logo" src={logoMumo} alt="Logo de l'association MUMO" />
           <p className="bande-surtitre">Limoges · France</p>
           <h2>MUMO</h2>
           <p>
@@ -56,6 +66,11 @@ export default function LesAssos() {
             Implanté à Limoges, le groupe a notamment participé au festival
             de jazz Éclats d'Émail en 2023.
           </p>
+          <img
+            className="photo-bande"
+            src={photoMusiciens}
+            alt="Les musiciens du groupe Aniel en concert"
+          />
           <ul className="equipe">
             <li>
               <span className="equipe-nom">Anyel Curren</span>
@@ -96,6 +111,11 @@ export default function LesAssos() {
             scène. Une création née dans la bienveillance, la douceur et le
             respect des différences de chacun.
           </p>
+          <img
+            className="photo-bande"
+            src={photoLoubnaSophie}
+            alt="Loubna Menane et Sophie Curren sur scène"
+          />
           <div className="assos-action">
             <Link to="/le-spectacle" className="bouton">Découvrir le spectacle</Link>
           </div>

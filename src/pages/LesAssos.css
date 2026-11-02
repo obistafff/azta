@@ -1,0 +1,39 @@
+/* ---------- Logo d'association ---------- */
+.asso-logo {
+  width: clamp(120px, 20vw, 180px);
+  height: auto;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+}
+
+/* ---------- Équipe ---------- */
+.equipe {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 3rem;
+  margin-top: 2.5rem;
+}
+
+.equipe li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.equipe-nom {
+  font-family: var(--font-titre);
+  font-size: 1.15rem;
+}
+
+.equipe-role {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* ---------- Bouton final ---------- */
+.assos-action {
+  margin-top: 2.5rem;
+}

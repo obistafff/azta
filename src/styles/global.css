@@ -168,3 +168,12 @@ img {
   max-width: 30ch;
   margin-inline: auto;
 }
+/* ---------- Photo dans une bande ---------- */
+.photo-bande {
+  width: auto;
+  height: auto;
+  max-width: min(100%, 520px);
+  max-height: 400px;
+  margin: 2.5rem auto 0;
+  border-radius: var(--rayon);
+}
