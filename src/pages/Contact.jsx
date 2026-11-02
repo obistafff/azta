@@ -48,7 +48,7 @@ export default function Contact() {
               </span>
               <a
                 className="bouton bouton-secondaire"
-                href="/documents/fiche-technique-azta.pdf"
+                href={`${import.meta.env.BASE_URL}documents/fiche-technique-azta.pdf`}
                 download
               >
                 Télécharger
