@@ -30,8 +30,40 @@ export default function Contact() {
 
       <section className="bande">
         <div className="conteneur bande-contenu">
-          <p className="bande-surtitre">Professionnels</p>
-          <h2>Programmer AZTA</h2>
+          <p className="bande-surtitre">Nous suivre</p>
+          <h2>AZTA en ligne</h2>
+
+          
+
+          {/* Les liens, en dessous */}
+          <ul className="reseaux">
+            <li>
+              <a href="https://www.youtube.com/@Aztaprojet" target="_blank" rel="noopener noreferrer">
+                YouTube AZTA
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@aniel6054" target="_blank" rel="noopener noreferrer">
+                YouTube Aniel
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=pU2vYzcZTUg" target="_blank" rel="noopener noreferrer">
+                Vidéo de résidence
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61589478367770" target="_blank" rel="noopener noreferrer">
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="bande section-claire">
+        <div className="conteneur bande-contenu">
+          <h2>Fiche technique</h2>
           <p>
             AZTA est un spectacle musical mêlant musique, théâtre et danse,
             porté par neuf artistes sur scène. Toutes les informations
@@ -42,7 +74,6 @@ export default function Contact() {
           <ul className="documents">
             <li className="document">
               <span className="document-type">PDF · 7 pages</span>
-              <span className="document-titre">Fiche technique</span>
               <span className="document-detail">
                 Matériel, plan de scène, patch-list
               </span>
@@ -52,33 +83,6 @@ export default function Contact() {
                 download
               >
                 Télécharger
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="bande section-claire">
-        <div className="conteneur bande-contenu">
-          <p className="bande-surtitre">Nous suivre</p>
-          <h2>AZTA en ligne</h2>
-          <ul className="reseaux">
-            <li>
-              <a
-                href="https://www.facebook.com/profile.php?id=61589478367770"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/watch?v=pU2vYzcZTUg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Vidéo de résidence
               </a>
             </li>
           </ul>

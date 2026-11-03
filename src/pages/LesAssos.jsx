@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import logoMumo from '../assets/images/logos/logo-mumo.jpg'
+import logoAmzarts from '../assets/images/logos/logo-amzarts.png'
 import photoLoubna from '../assets/images/spectacle/azta-noriac-loubna.jpg'
 import photoMusiciens from '../assets/images/spectacle/azta-noriac-musiciensautreangle.jpg'
 import photoLoubnaSophie from '../assets/images/spectacle/azta-noriac-loubnasophie.jpg'
@@ -20,6 +21,7 @@ export default function LesAssos() {
 
       <section className="bande section-claire">
         <div className="conteneur bande-contenu">
+          <img className="asso-logo" src={logoAmzarts} alt="Logo de l'association AMZarts" />
           <p className="bande-surtitre">Agadir · Maroc</p>
           <h2>AMZarts</h2>
           <p>
@@ -36,13 +38,9 @@ export default function LesAssos() {
           <img
             className="photo-bande"
             src={photoLoubna}
-            alt="Loubna Menane sur la scène de l'Espace Noriac"
+            alt="Loubna Menane et Abdellah Qazdar sur la scène de l'Espace Noriac"
           />
           <ul className="equipe">
-            <li>
-              <span className="equipe-nom">Mohamed Abaragh</span>
-              <span className="equipe-role">Mise en scène, composition, chant</span>
-            </li>
             <li>
               <span className="equipe-nom">Loubna Menane</span>
               <span className="equipe-role">Écriture, narration</span>
@@ -66,29 +64,18 @@ export default function LesAssos() {
             Implanté à Limoges, le groupe a notamment participé au festival
             de jazz Éclats d'Émail en 2023.
           </p>
-          <img
-            className="photo-bande"
-            src={photoMusiciens}
-            alt="Les musiciens du groupe Aniel en concert"
-          />
-          <ul className="equipe">
-            <li>
-              <span className="equipe-nom">Anyel Curren</span>
-              <span className="equipe-role">Voix, kora, composition</span>
-            </li>
-            <li>
-              <span className="equipe-nom">Sophie Curren</span>
-              <span className="equipe-role">Basse · présidente de MUMO</span>
-            </li>
-            <li>
-              <span className="equipe-nom">Maëlle Bousquet</span>
-              <span className="equipe-role">Clarinette</span>
-            </li>
-            <li>
-              <span className="equipe-nom">Abdellah Qazdar</span>
-              <span className="equipe-role">Batterie, arrangements</span>
-            </li>
-          </ul>
+          
+          <figure className="photo-legende">
+            <img
+              className="photo-bande"
+              src={photoMusiciens}
+              alt="Les sept musiciens d'AZTA sur scène"
+            />
+            <figcaption>
+              Les sept musiciens d'AZTA : Anyel, Sophie, Maëlle, Abdellah,
+              Loubna, Mohamed et Stéphane
+            </figcaption>
+          </figure>
         </div>
       </section>
 

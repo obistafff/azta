@@ -35,9 +35,17 @@ export default function LeSpectacle() {
         </div>
       </section>
 
-      <section className="spectacle-diaporama">
+      <section className="spectacle-teaser">
         <div className="conteneur">
-          <Diaporama photos={photosSpectacle} />
+          <div className="teaser">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/5caIraN7F6M"
+              title="Teaser du spectacle AZTA"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -131,6 +139,12 @@ export default function LeSpectacle() {
               <span className="parcours-detail">Résidence et deux représentations</span>
             </li>
           </ol>
+        </div>
+      </section>
+
+      <section className="spectacle-diaporama">
+        <div className="conteneur">
+          <Diaporama photos={photosSpectacle} />
         </div>
       </section>
     </>
