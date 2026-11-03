@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import heroImage from '../assets/images/azta-concert-jean-gagnant.jpg'
+import heroImage from '../assets/images/spectacle/azta-spectacle-noriac.jpg'
 import './Accueil.css'
 
 export default function Accueil() {
@@ -8,7 +8,7 @@ export default function Accueil() {
       <img
         className="hero-image"
         src={heroImage}
-        alt="Les artistes d'AZTA en concert au centre culturel Jean Gagnant à Limoges"
+        alt="Les artistes d'AZTA sur la scène de l'Espace Noriac à Limoges"
       />
       <div className="hero-voile"></div>
 

@@ -1,29 +1,49 @@
 import Diaporama from '../components/Diaporama.jsx'
 import tous from '../assets/images/spectacle/azta-noriac-tous.jpg'
+import abdel from '../assets/images/spectacle/azta-noriac-abdel.jpg'
 import chanteurs from '../assets/images/spectacle/azta-noriac-chanteurs.jpg'
-import loubnaMohamed from '../assets/images/spectacle/azta-noriac-loubnamohamed.jpg'
-import musiciens from '../assets/images/spectacle/azta-noriac-musiciens.jpg'
-import sophie from '../assets/images/spectacle/azta-noriac-sophie.jpg'
+import maelle from '../assets/images/spectacle/azta-noriac-maelle.jpg'
 import danse from '../assets/images/spectacle/azta-noriac-danse.jpg'
+import basseBat from '../assets/images/spectacle/azta-noriac-bassebat.jpg'
+import aniel from '../assets/images/spectacle/azta-noriac-aniel.jpg'
+import loubna from '../assets/images/spectacle/azta-noriac-loubna.jpg'
+import musiciens from '../assets/images/spectacle/azta-noriac-musiciens.jpg'
+import chamsia from '../assets/images/spectacle/azta-noriac-chamsia.jpg'
+import sophie2 from '../assets/images/spectacle/azta-noriac-sophie2.jpg'
+import steph from '../assets/images/spectacle/azta-noriac-steph.jpg'
+import chanteurs2 from '../assets/images/spectacle/azta-noriac-chanteurs2.jpg'
 import zaouli from '../assets/images/spectacle/azta-noriac-zaouli.jpg'
+import musiciensAutreAngle from '../assets/images/spectacle/azta-noriac-musiciensautreangle.jpg'
+import sophie from '../assets/images/spectacle/azta-noriac-sophie.jpg'
+import musiciens2 from '../assets/images/spectacle/azta-noriac-musiciens2.jpg'
 import salut from '../assets/images/spectacle/azta-noriac-salut.jpg'
 import './LeSpectacle.css'
 
 const photosSpectacle = [
   { src: tous, alt: "Les artistes d'AZTA réunis sur la scène de l'Espace Noriac" },
+  { src: abdel, alt: 'Abdellah Qazdar à la batterie' },
   { src: chanteurs, alt: 'Les voix du spectacle AZTA' },
-  { src: loubnaMohamed, alt: 'Loubna Menane et Mohamed Abaragh sur scène' },
-  { src: musiciens, alt: "Les musiciens d'AZTA en concert" },
-  { src: sophie, alt: 'Sophie Curren à la basse' },
+  { src: maelle, alt: 'Maëlle Bousquet à la clarinette' },
   { src: danse, alt: 'Un moment de danse dans le spectacle AZTA' },
+  { src: basseBat, alt: 'Sophie Curren et Abdellah Qazdar, basse et batterie' },
+  { src: aniel, alt: 'Anyel Curren à la kora' },
+  { src: loubna, alt: 'Loubna Menane et Abdellah Qazdar sur scène' },
+  { src: musiciens, alt: "Les musiciens d'AZTA en concert" },
+  { src: chamsia, alt: 'Chamsia, danseuse' },
+  { src: sophie2, alt: 'Sophie Curren à la basse' },
+  { src: steph, alt: 'Stéphane à la guitare' },
+  { src: chanteurs2, alt: 'Les voix du spectacle AZTA' },
   { src: zaouli, alt: 'Zaouli Curren, danseuse' },
+  { src: musiciensAutreAngle, alt: "Les sept musiciens d'AZTA sur scène" },
+  { src: sophie, alt: 'Sophie Curren à la basse' },
+  { src: musiciens2, alt: "Les sept musiciens d'AZTA sur scène" },
   { src: salut, alt: "Le salut final des artistes d'AZTA" },
 ]
 
 export default function LeSpectacle() {
   return (
     <>
-      <section className="page-intro">
+      <section className="page-intro page-intro-serree">
         <div className="conteneur">
           <h1>Le Spectacle</h1>
           <p className="chapeau">

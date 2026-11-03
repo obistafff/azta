@@ -1,8 +1,8 @@
 import { Link } from 'react-router'
 import logoMumo from '../assets/images/logos/logo-mumo.jpg'
 import logoAmzarts from '../assets/images/logos/logo-amzarts.png'
-import photoLoubna from '../assets/images/spectacle/azta-noriac-loubna.jpg'
-import photoMusiciens from '../assets/images/spectacle/azta-noriac-musiciensautreangle.jpg'
+import photoLoubnaMohamed from '../assets/images/spectacle/azta-noriac-loubnamohamed.jpg'
+import photoAniel from '../assets/images/assos/aniel-groupe.jpeg'
 import photoLoubnaSophie from '../assets/images/spectacle/azta-noriac-loubnasophie.jpg'
 import './LesAssos.css'
 
@@ -35,12 +35,19 @@ export default function LesAssos() {
             Ses projets visent à enraciner l'identité marocaine, à préserver
             et à faire revivre le patrimoine immatériel du pays.
           </p>
-          <img
-            className="photo-bande"
-            src={photoLoubna}
-            alt="Loubna Menane et Abdellah Qazdar sur la scène de l'Espace Noriac"
-          />
+          <figure className="photo-legende">
+            <img
+              className="photo-bande"
+              src={photoLoubnaMohamed}
+              alt="Loubna Menane et Mohamed Abaragh sur scène"
+            />
+            <figcaption>Loubna Menane et Mohamed Abaragh</figcaption>
+          </figure>
           <ul className="equipe">
+            <li>
+              <span className="equipe-nom">Mohamed Abaragh</span>
+              <span className="equipe-role">Mise en scène, composition, chant</span>
+            </li>
             <li>
               <span className="equipe-nom">Loubna Menane</span>
               <span className="equipe-role">Écriture, narration</span>
@@ -64,18 +71,32 @@ export default function LesAssos() {
             Implanté à Limoges, le groupe a notamment participé au festival
             de jazz Éclats d'Émail en 2023.
           </p>
-          
           <figure className="photo-legende">
             <img
               className="photo-bande"
-              src={photoMusiciens}
-              alt="Les sept musiciens d'AZTA sur scène"
+              src={photoAniel}
+              alt="Le groupe Aniel avec ses instruments : kora, basse, clarinette et caisse claire"
             />
-            <figcaption>
-              Les sept musiciens d'AZTA : Anyel, Sophie, Maëlle, Abdellah,
-              Loubna, Mohamed et Stéphane
-            </figcaption>
+            <figcaption>Le groupe Aniel : Anyel, Sophie, Maëlle et Abdellah</figcaption>
           </figure>
+          <ul className="equipe">
+            <li>
+              <span className="equipe-nom">Anyel Curren</span>
+              <span className="equipe-role">Voix, kora, composition</span>
+            </li>
+            <li>
+              <span className="equipe-nom">Sophie Curren</span>
+              <span className="equipe-role">Basse</span>
+            </li>
+            <li>
+              <span className="equipe-nom">Maëlle Bousquet</span>
+              <span className="equipe-role">Clarinette</span>
+            </li>
+            <li>
+              <span className="equipe-nom">Abdellah Qazdar</span>
+              <span className="equipe-role">Batterie, arrangements</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -98,11 +119,14 @@ export default function LesAssos() {
             scène. Une création née dans la bienveillance, la douceur et le
             respect des différences de chacun.
           </p>
-          <img
-            className="photo-bande"
-            src={photoLoubnaSophie}
-            alt="Loubna Menane et Sophie Curren sur scène"
-          />
+          <figure className="photo-legende">
+            <img
+              className="photo-bande"
+              src={photoLoubnaSophie}
+              alt="Loubna Menane et Sophie Curren sur scène"
+            />
+            <figcaption>Loubna Menane et Sophie Curren</figcaption>
+          </figure>
           <div className="assos-action">
             <Link to="/le-spectacle" className="bouton">Découvrir le spectacle</Link>
           </div>
